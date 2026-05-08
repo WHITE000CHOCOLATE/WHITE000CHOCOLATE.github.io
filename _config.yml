@@ -23,7 +23,7 @@ repository               : "white000chocolate/white000chocolate.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Biting Huang"
   pronouns         : # example: "she/her"  
   bio              : "Ph.D. student at Tsinghua University, advised by <a href=\"https://feihe.github.io\">Fei He</a>, focusing on formal verification."
