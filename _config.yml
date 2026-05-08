@@ -26,7 +26,7 @@ author:
   avatar           : "profile.jpg"
   name             : "Biting Huang"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. student at Tsinghua University, advised by <a href=\"https://feihe.github.io\">Fei He</a>, focusing on formal verification."
+  bio              : "Ph.D. student at Tsinghua University, focusing on formal verification."
   location         : "Beijing, China"
   employer         : "Tsinghua University"
   uri              : # URL
