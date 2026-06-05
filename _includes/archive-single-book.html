@@ -15,7 +15,7 @@
     <p class="archive__item-meta">
       <span itemprop="author">{{ post.author }}</span>
       {% if post.date %}
-        · 读完于 {{ post.date | default: "1900-01-01" | date: "%Y" }}
+        · 添加于 {{ post.date | default: "1900-01-01" | date: "%Y-%m" }}
       {% endif %}
     </p>
 

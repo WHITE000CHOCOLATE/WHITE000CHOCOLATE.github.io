@@ -39,7 +39,7 @@ layout: default
 
           {% if page.date %}
             <p class="book__meta">
-              读完于 <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%Y年%m月%d日" }}</time>
+              <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%Y-%m" }}</time>
             </p>
           {% endif %}
 

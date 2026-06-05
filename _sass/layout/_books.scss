@@ -25,10 +25,7 @@
     font-size: $type-size-6;
     color: var(--global-text-color-light);
     margin-top: 1em;
-
-    &::before {
-      content: "— ";
-    }
+    text-align: right;
   }
 }
 
