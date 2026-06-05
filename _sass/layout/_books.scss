@@ -1,5 +1,37 @@
 /* Reading / books section */
 
+.reading-epigraph {
+  margin: 0 0 2em 0;
+  padding: 0.25em 0 0.25em 1.25em;
+  border-left: 0.35em solid var(--global-border-color);
+  font-style: italic;
+
+  p {
+    margin-bottom: 0.75em;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__translation {
+    font-style: normal;
+    color: var(--global-text-color-light);
+    margin-top: 0.75em;
+  }
+
+  footer {
+    font-style: normal;
+    font-size: $type-size-6;
+    color: var(--global-text-color-light);
+    margin-top: 1em;
+
+    &::before {
+      content: "— ";
+    }
+  }
+}
+
 .book__status {
   font-size: $type-size-6;
   font-weight: bold;
