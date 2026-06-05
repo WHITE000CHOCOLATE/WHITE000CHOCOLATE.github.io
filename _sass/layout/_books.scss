@@ -20,12 +20,24 @@
     margin-top: 0.75em;
   }
 
-  footer {
+  &__attribution {
     font-style: normal;
     font-size: $type-size-6;
     color: var(--global-text-color-light);
-    margin-top: 1em;
+    margin: 1em 0 0 auto;
+    padding-right: 0;
+    width: fit-content;
+    max-width: 100%;
     text-align: right;
+  }
+}
+
+.archive blockquote.reading-epigraph {
+  font-style: italic;
+
+  p.reading-epigraph__translation,
+  p.reading-epigraph__attribution {
+    font-style: normal;
   }
 }
 
