@@ -10,6 +10,8 @@
 main:
   - title: "Publications"
     url: /publications/
+  - title: "Reading"
+    url: /reading/
 
 # Temporarily hide Blog (restore as list items under main:):
 #   - title: "Blog"

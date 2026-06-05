@@ -1,0 +1,56 @@
+/* Reading / books section */
+
+.book__status {
+  font-size: $type-size-6;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  &--finished {
+    color: var(--global-link-color);
+  }
+
+  &--reading {
+    color: var(--global-thead-color);
+  }
+
+  &--to_read {
+    color: var(--global-text-color-light);
+  }
+}
+
+.book__meta {
+  margin-bottom: 0.5em;
+  color: var(--global-text-color-light);
+}
+
+.book__meta-label {
+  font-weight: bold;
+}
+
+.book__cover {
+  margin: 1.5em 0;
+
+  img {
+    max-width: 200px;
+    border: 1px solid var(--global-border-color);
+    border-radius: 4px;
+  }
+}
+
+.book__links {
+  margin-bottom: 1em;
+}
+
+.book__content {
+  blockquote {
+    border-left-width: 0.35em;
+    margin-left: 0;
+    padding-left: 1.25em;
+  }
+}
+
+.archive__item-meta {
+  color: var(--global-text-color-light);
+  margin-bottom: 0.25em;
+}

@@ -1,0 +1,14 @@
+---
+layout: archive
+title: "Reading"
+permalink: /reading/
+author_profile: true
+---
+
+This page records books I have read and excerpts I found worth keeping. The entries below—including book titles, excerpts, and personal notes—are mainly written in Chinese.
+
+{% include base_path %}
+
+{% for post in site.books reversed %}
+  {% include archive-single-book.html %}
+{% endfor %}
