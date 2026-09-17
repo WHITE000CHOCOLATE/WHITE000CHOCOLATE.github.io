@@ -10,10 +10,8 @@
 main:
   - title: "Publications"
     url: /publications/
-  - title: "Experience"
-    url: /experience/#experience
-  - title: "Honors and Awards"
-    url: /experience/#honors-and-awards
+  - title: "Experience & Honors"
+    url: /experience/
   - title: "Reading"
     url: /reading/
 

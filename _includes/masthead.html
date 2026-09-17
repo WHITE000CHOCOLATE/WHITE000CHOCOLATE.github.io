@@ -14,8 +14,7 @@
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            {% assign link_path = link.url | split: '#' | first %}
-            <li class="masthead__menu-item {% if page.url contains link_path and link_path != '/' %}selected{% endif %}">
+            <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
