@@ -1,0 +1,21 @@
+{% comment %}
+  Date-aligned list shared by the homepage News section and the
+  Honors and Service page.
+
+  Pass the items from a data file, for example:
+
+      include dated-list.html items=site.data.honors
+
+  Each item may define:
+    title - entry text; may contain inline HTML such as <strong>
+    date  - right-aligned date or term, e.g. 2026-03, 2025 秋
+    note  - optional muted suffix, e.g. the awarding body or venue
+{% endcomment %}
+<ul class="dated-list">
+  {% for item in include.items %}
+    <li class="dated-list__item">
+      <span class="dated-list__title">{{ item.title }}{% if item.note %}<span class="dated-list__note">{{ item.note }}</span>{% endif %}</span>
+      <span class="dated-list__date">{{ item.date }}</span>
+    </li>
+  {% endfor %}
+</ul>

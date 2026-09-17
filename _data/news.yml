@@ -1,0 +1,18 @@
+# Homepage news, newest first.
+# Rendered by /_includes/dated-list.html from /_pages/about.md.
+#
+#   - date: "2026-05"                 # always quote the date
+#     title: "The announcement text"  # may contain inline HTML, e.g. <strong>
+#     note: "optional muted suffix"
+
+- date: "2026-05"
+  title: >-
+    Our paper "LLM-Guided Loop Bound Generation for Program Termination Verification" has been accepted by ICML'26!
+
+- date: "2026-03"
+  title: >-
+    Our ICSE'26 paper "Accurate Inference of Termination Conditions" has been selected to receive the <strong>ACM SIGSOFT Distinguished Paper Award</strong>!
+
+- date: "2025-06"
+  title: >-
+    Our paper "Accurate Inference of Termination Conditions" has been accepted by ICSE'26!

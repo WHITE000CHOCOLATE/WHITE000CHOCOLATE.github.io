@@ -1,0 +1,18 @@
+# Honors and awards, newest first.
+# Rendered on /experience/ by /_includes/dated-list.html.
+#
+#   - date: "2026-03"                     # always quote the date
+#     title: "Award name"
+#     note: "Awarding body or venue"      # optional, shown in muted grey
+
+- date: "ICSE 2026"
+  title: "ACM SIGSOFT Distinguished Paper Award"
+
+- date: "2025"
+  title: "Outstanding Student Leader of Tsinghua University"
+
+- date: "2023"
+  title: "Outstanding Graduate Award of Beijing"
+
+- date: "2023"
+  title: "Excellent Graduate of Tsinghua University"

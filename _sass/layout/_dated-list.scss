@@ -1,0 +1,38 @@
+/* ==========================================================================
+   DATED LIST
+   Left-aligned entry text with a right-aligned date/term column.
+   Shared by the homepage News section and the Honors & Service page.
+   ========================================================================== */
+
+.dated-list {
+  list-style: none;
+  margin: 0 0 1.5em;
+  padding-left: 0;
+}
+
+.dated-list__item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  column-gap: 1rem;
+  margin-bottom: 0.5em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.dated-list__title {
+  min-width: 0;
+}
+
+.dated-list__note {
+  margin-left: 0.5em;
+  font-size: $type-size-6;
+  color: var(--global-text-color-light);
+}
+
+.dated-list__date {
+  color: var(--global-text-color-light);
+  white-space: nowrap;
+}
