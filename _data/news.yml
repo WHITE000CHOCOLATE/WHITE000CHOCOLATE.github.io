@@ -1,9 +1,9 @@
 # Homepage news, newest first.
-# Rendered by /_includes/dated-list.html from /_pages/about.md.
+# Rendered by /_includes/dated-list.html from /_pages/about.md, which
+# passes split=true so the date sits in a right-aligned column.
 #
-#   - date: "2026-05"                 # always quote the date
-#     title: "The announcement text"  # may contain inline HTML, e.g. <strong>
-#     note: "optional muted suffix"
+#   - date: "2026-05"
+#     title: "The announcement text"   # may contain inline HTML, e.g. <strong>
 
 - date: "2026-05"
   title: >-

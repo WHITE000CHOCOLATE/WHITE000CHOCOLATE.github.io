@@ -1,9 +1,8 @@
 # Honors and awards, newest first.
 # Rendered on /experience/ by /_includes/dated-list.html.
 #
-#   - date: "2026-03"                     # always quote the date
+#   - date: "2026-03"
 #     title: "Award name"
-#     note: "Awarding body or venue"      # optional, shown in muted grey
 
 - date: "ICSE 2026"
   title: "ACM SIGSOFT Distinguished Paper Award"

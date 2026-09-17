@@ -1,21 +1,37 @@
 {% comment %}
-  Date-aligned list shared by the homepage News section and the
-  Honors and Service page.
+  Bulleted list shared by the homepage News section and the
+  Experience and Honors page.
 
   Pass the items from a data file, for example:
 
       include dated-list.html items=site.data.honors
 
+  By default the date is appended to the entry text after a comma, which
+  matches the short noun-phrase style used for awards and experience:
+
+      National Scholarship, 2024
+
+  Pass split=true to move the date into a right-aligned column instead.
+  This reads better for long entries that end in a full sentence, which is
+  why the homepage news uses it:
+
+      include dated-list.html items=site.data.news split=true
+
   Each item may define:
     title - entry text; may contain inline HTML such as <strong>
-    date  - right-aligned date or term, e.g. 2026-03, 2025 秋
-    note  - optional muted suffix, e.g. the awarding body or venue
+    date  - e.g. 2026-03, 2025, 2024, 2025, 2026
 {% endcomment %}
 <ul class="dated-list">
   {% for item in include.items %}
     <li class="dated-list__item">
-      <span class="dated-list__title">{{ item.title }}{% if item.note %}<span class="dated-list__note">{{ item.note }}</span>{% endif %}</span>
-      <span class="dated-list__date">{{ item.date }}</span>
+      {% if include.split %}
+        <span class="dated-list__row">
+          <span class="dated-list__title">{{ item.title }}</span>
+          {% if item.date %}<span class="dated-list__date">{{ item.date }}</span>{% endif %}
+        </span>
+      {% else %}
+        {{ item.title }}{% if item.date %}, {{ item.date }}{% endif %}
+      {% endif %}
     </li>
   {% endfor %}
 </ul>

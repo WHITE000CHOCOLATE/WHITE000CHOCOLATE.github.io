@@ -15,4 +15,4 @@ I am currently a Ph.D. candidate at the School of Software, Tsinghua University,
 News
 ======
 
-{% include dated-list.html items=site.data.news %}
+{% include dated-list.html items=site.data.news split=true %}
