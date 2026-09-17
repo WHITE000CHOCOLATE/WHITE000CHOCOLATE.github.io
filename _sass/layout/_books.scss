@@ -89,11 +89,16 @@
     margin-left: 0;
     padding-left: 1.25em;
 
-    /* 同一引用块内保留换行：kramdown 把连续的「> 行」并入同一个 <p> 并原样保留 \n，
-       浏览器默认会把它折叠成空格（于是连成一段）。pre-line 让 \n 生效，
-       使「同主题、联系紧密」的语句各自成行，间距仅为行高，小于独立引用块的段间距。 */
+    /* 同一引用块内的多条紧密语句（源码中以单独一行的 ">" 分隔）：
+       收紧段间距，小于独立引用块之间的 2em，以体现「同主题、联系紧密」。
+       注意：不能用 white-space: pre-line —— 生产环境的 compress 布局会
+       把换行符折叠成空格，该属性在线上无效，必须依赖独立 <p> 元素。 */
     p {
-      white-space: pre-line;
+      margin-bottom: 0.75em;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
     }
   }
 
