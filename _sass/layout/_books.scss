@@ -89,6 +89,10 @@
     margin-left: 0;
     padding-left: 1.25em;
 
+    /* 书摘不用斜体：中文长段落通篇斜体可读性差。
+       只覆盖 .book__content，/_pages/reading.html 的题词不受影响。 */
+    font-style: normal;
+
     /* 同一引用块内的多条紧密语句（源码中以单独一行的 ">" 分隔）：
        收紧段间距，小于独立引用块之间的 2em，以体现「同主题、联系紧密」。
        注意：不能用 white-space: pre-line —— 生产环境的 compress 布局会
