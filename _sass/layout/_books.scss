@@ -88,6 +88,34 @@
     border-left-width: 0.35em;
     margin-left: 0;
     padding-left: 1.25em;
+
+    /* 同一引用块内保留换行：kramdown 把连续的「> 行」并入同一个 <p> 并原样保留 \n，
+       浏览器默认会把它折叠成空格（于是连成一段）。pre-line 让 \n 生效，
+       使「同主题、联系紧密」的语句各自成行，间距仅为行高，小于独立引用块的段间距。 */
+    p {
+      white-space: pre-line;
+    }
+  }
+
+  /* 章节标题（##）：加下边框与更大上边距，形成明显的分节 */
+  h2 {
+    margin-top: 2.5em;
+    padding-bottom: 0.35em;
+    border-bottom: 1px solid var(--global-border-color);
+    font-size: $type-size-4;
+  }
+
+  /* 小节标题（###）：主题默认与正文同为 1em，此处放大以拉开层级 */
+  h3 {
+    margin-top: 1.75em;
+    margin-bottom: 0.4em;
+    font-size: 1.125em;
+  }
+
+  /* 标题后紧跟的引用块收紧上边距 */
+  h2 + blockquote,
+  h3 + blockquote {
+    margin-top: 1em;
   }
 }
 
